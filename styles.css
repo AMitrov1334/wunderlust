@@ -49,6 +49,8 @@ table {
 	border-spacing: 0;
 }
 
+/*------------global styles------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
 
 :root {
@@ -154,7 +156,7 @@ nav {
     order: 2;
 }
 
-/* hamburger menu */
+ /*------------menu toggle styles------------*/
 
 #menu-toggle {
     display: flex;
@@ -248,7 +250,9 @@ nav {
     border-bottom: 1px solid var(--black);
 }
 
-/* intro section */
+/*------------main content styles------------*/
+
+/*------------intro section------------*/
 
 #intro {
     padding: 0.5em 0;
@@ -265,7 +269,7 @@ nav {
     width: 100%;
 }
 
-/* plan section */
+/*------------plan section------------*/
 
 #plan {
     background-color: var(--yellow);
@@ -302,7 +306,7 @@ nav {
     margin: 0 auto;
 }
 
-/* testimonials section */
+/*------------testimonials section------------*/
 
 #testimonials {
     padding: 2em;
@@ -336,7 +340,7 @@ nav {
     content: '"';
 }
 
-/* about section */
+/*------------about section------------*/
 #about {
     background-color: var(--blue);
 }
@@ -364,7 +368,7 @@ nav {
     max-height: 80px;
 }
 
-/* contact section */
+/*------------contact form section------------*/
 
 #contact {
     padding: 1em 0.5em 0;
@@ -478,7 +482,7 @@ select::before {
     font-weight: bolder;
 }
 
-/* footer section */
+/*------------footer styles------------*/
 
 footer {
     display: flex;
@@ -502,7 +506,12 @@ footer a {
     padding: 1em 0 0;
 }
 
-/* media queries */
+/*------------small screens------------*/
+
+@media screen and (min-width: 320px){
+}
+
+/*------------medium screens------------*/
 
 @media (min-width: 650px) {
     header {
@@ -646,6 +655,8 @@ footer a {
     }
 }
 
+/*------------large screens------------*/
+
 @media (min-width: 1150px) {
     header {
         grid-template-rows: 80px 20px;
@@ -697,7 +708,7 @@ footer a {
 
     #plan div {
         grid-template-columns: repeat(4, 1fr);
-        padding: 1em 3em 4em;
+        padding: 1em 3em 6em;
     }
 
     #plan section {
@@ -723,6 +734,10 @@ footer a {
     #about div {
         max-width: 60%;
         margin: 0 auto;
+    }
+
+    #about img {
+        max-height: 60%;
     }
 
     form {
